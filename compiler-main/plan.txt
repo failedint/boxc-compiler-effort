@@ -1,0 +1,4 @@
+PLAN:
+
+1. Make the file opener whether as a .h or a .c file extension. | Check but i put file handling in main.c
+2. Make a lexer/ast gen
