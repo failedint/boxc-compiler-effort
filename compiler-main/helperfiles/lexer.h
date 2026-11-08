@@ -1,7 +1,6 @@
 #ifndef LEXER_H
 #define LEXER_H
-
-#include <cwchar>
+#include <string.h>
 typedef enum {
     I32,
     VOID__,
@@ -18,5 +17,8 @@ typedef struct sets_tree{
     struct sets_tree *next;
 }sets_tree;
 
+sets determine_set(const char* token_str);
+sets_tree* create_set_node(sets type, const char* value);
+sets_tree* lex_main(const char* sourcefile);
 
 #endif
